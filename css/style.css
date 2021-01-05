@@ -1,0 +1,45 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 62.5%;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+header{
+  height: 100vh;
+  background-image: url('../assets/images/mountains1920.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  display: flex;
+}
+
+header .button__nav-open{
+  display: inline-block;
+  background-image: url('../assets/icons/menu.svg');
+  height: 50px;
+  width: 50px;
+}
+
+header .button__nav-open{
+  display: inline-block;
+  background-image: url('../assets/icons/menu.svg');
+  height: 50px;
+  width: 50px;
+}
+
+.logo{
+  width: 80%;
+}
+
+.logo img {
+  height: 8vh;
+  padding: 5px 0 0 10px;
+}
