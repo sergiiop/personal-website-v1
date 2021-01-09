@@ -1,7 +1,7 @@
 const navSlide = () => {
   const menuBtn = document.querySelector('.menu-icon');
-  const menu = document.querySelector('.menu-list');
-  const navLinks = document.querySelectorAll('.menu-list li');
+  const menu = document.querySelector('.menu__list');
+  const navLinks = document.querySelectorAll('.menu__list li');
 
   menuBtn.addEventListener('click', () => {
     menu.classList.toggle('menu-active')
