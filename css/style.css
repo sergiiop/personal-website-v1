@@ -180,6 +180,7 @@ main{
   justify-self: center;
   width: 80%;
   min-width: 300px;
+  justify-items: center;
 }
 
 .about__title {
