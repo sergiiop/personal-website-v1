@@ -1,5 +1,5 @@
 :root{
-  --warm-blue: #252C40;
+  --warm-blue: #000000;
   --font-mono: 'Fira Mono', monospace;
 }
 
@@ -16,7 +16,7 @@ html{
 }
 
 body{
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
 
 header {
@@ -117,14 +117,15 @@ main{
 }
 
 .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
   width: 80%;
   min-width: 300px;
-  height: 50%;
+  height: 55%;
   /* max-width: 700px; */
   text-align: center;
-  margin: 0 10px;
-  padding: 50px 0;
   border-radius: 2rem;
   background: white;
   background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
@@ -151,8 +152,8 @@ main{
 
 .main span {
   position: absolute;
-  left: calc(50% - 25px);
-  top: 350px;
+  left: calc(50% - 30px);
+  top: 75%;
   display: inline-block;
   width: 60px;
   height: 35px;
@@ -164,11 +165,10 @@ main{
 
 
 .about__container {
-  padding: 100px 10px 0;
+  display: flex;
   height: 100vh;
-  color: var(--warm-blue);
   text-align: center;
-  
+  align-items: flex-end;
 }
 
 .about__container .glass {
@@ -177,23 +177,25 @@ main{
   grid-template: 0.2fr 1fr 1.2fr/ 1fr;
   border-radius: 2rem;
   background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
-  justify-self: center;
   width: 80%;
   min-width: 300px;
-  justify-items: center;
 }
 
 .about__title {
   justify-self: center;
   max-width: 300px;
-  width: 70%;
+  width: 80%;
   height: 35px;
   border-radius: 2rem;
   font-family: var(--font-mono);
-  font-size: 2rem;
+  font-size: 1.6rem;
   letter-spacing: 2px;
-  margin-top: 35px;
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  text-transform: uppercase;
+  margin-top: 20px;
+  align-content: center;
+  padding: 0 10px;
+  color: black;
+  background: linear-gradient(to right bottom, rgba(255,255,255,0.2), rgba(255,255,255,0.8));
 }
 
 .about__container figure{
@@ -220,23 +222,32 @@ main{
   border-radius: 2rem;
 }
 
-.about__paragraph--container .header__button{
+.header__button{
   position: absolute;
-  left: calc(50% - 118px);
-  top: 200px;
+  left: calc(50% - 122px);
+  top: 75%;
   display: block;
-  margin-top: 50px;
-  background-color: #c2e9fb;
-  padding: 15px;
+  margin: 10px;
+  background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+  background-size: 200% auto;
+  padding: 15px 45px;
   width: 229px;
   height: 48px;
-  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
-  border: none;
-  border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
   font-weight: bold;
   text-decoration: none;
-  color: black;
+  color: white;
+}
+
+.header__button:hover {
+  background-position: right center; /* change the direction of the change */
+  color: #fff;
+  text-decoration: none;
 }
 
 .about__paragraph--container p {
