@@ -220,6 +220,7 @@ main{
   margin: 10px;
   padding: 20px;
   border-radius: 2rem;
+  justify-self: center;
 }
 
 .header__button{
